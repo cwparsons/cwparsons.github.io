@@ -4,7 +4,7 @@
 	[c]2014 @scottjehl, Filament Group, Inc.
 	Licensed MIT
 	*/
-	window.loadCSS = function ( href, before, media, callback ){
+	window.loadCSS = function( href, before, media, callback ){
 		"use strict";
 		// Arguments explained:
 		// `href` is the URL for your CSS file.
@@ -20,26 +20,33 @@
 		ss.href = href;
 		// temporarily, set media to something non-matching to ensure it'll fetch without blocking render
 		ss.media = "only x";
-		ss.onload = callback || function() {};
+		// DEPRECATED
+		if( callback ) {
+			ss.onload = callback;
+		}
+
 		// inject link
 		ref.parentNode.insertBefore( ss, ref );
 		// This function sets the link's media back to `all` so that the stylesheet applies once it loads
 		// It is designed to poll until document.styleSheets includes the new sheet.
-		function toggleMedia(){
+		ss.onloadcssdefined = function( cb ){
 			var defined;
 			for( var i = 0; i < sheets.length; i++ ){
-				if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
+				if( sheets[ i ].href && sheets[ i ].href === ss.href ){
 					defined = true;
 				}
 			}
 			if( defined ){
-				ss.media = media || "all";
+				cb();
+			} else {
+				setTimeout(function() {
+					ss.onloadcssdefined( cb );
+				});
 			}
-			else {
-				setTimeout( toggleMedia );
-			}
-		}
-		toggleMedia();
+		};
+		ss.onloadcssdefined(function() {
+			ss.media = media || "all";
+		});
 		return ss;
 	}
 })();
