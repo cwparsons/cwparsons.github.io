@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/cparsons
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cwparsons.ca
+  * I am cparsons (https://keybase.io/cparsons) on keybase.
+  * I have a public key with fingerprint FCCB DC0A 8EBB 7A7C 36B8  6A8F D7C7 AAF6 2F6F 686F
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101cd05aef6ad37bfc68168b4c9ff37c576d07e29259c2da8c3f379a4b8638fb9170a",
+      "fingerprint": "fccbdc0a8ebb7a7c36b86a8fd7c7aaf62f6f686f",
+      "host": "keybase.io",
+      "key_id": "d7c7aaf62f6f686f",
+      "kid": "0101cd05aef6ad37bfc68168b4c9ff37c576d07e29259c2da8c3f379a4b8638fb9170a",
+      "uid": "afc6700ce5400976a64e9df7327f6000",
+      "username": "cparsons"
+    },
+    "service": {
+      "hostname": "cwparsons.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1520641594,
+  "expire_in": 157680000,
+  "prev": "384b6ad88037e64b006fb8a9796c7032a12ea548e9789fe7b22c1402e8fb869c",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIfAnicrZJbSBRRGMdX3aKWIqUgKIicoiIXO3PZc874YCGlkIVBN6ql5cyZc3Yn
+dWabmdWs7CGI6H4j6AYaIkURlEYkVnQjgo2IeigrKgJFqLArZSp2Ruytx54+znd+
+//934bs/MS8UyXErpO5zmd1vcrJ3TmRC61vmlGyTDMdskESsZiOB1ZjM8xPVlimV
+SEAGMjVBjDAOiakig1OIZYgNjeqcq4jGEDQBYoquxHSqmARTVaR1ohkYqpgbuowA
+kaISt+wkc9OuZfvCllNqmBQQzAwDEURVKHCCuYkoIoRDhUMOMeRCmHK8QCGaM4jH
+ii1H5MQjMdLeP/j/3HdmxI4IOQKAspgGgI4ggRrTTY5UBXEIAAhAj7k2qWWCpmni
+eo7tSY1RSWTrLMqCxQaT/CXqR5FiGhRJu47vUKdG/KR8P+2VBEq/IR2g9cxIjJok
+DMs2xR6Foo65nuXYUoksSOpbgascUwDU5JiuRSW2JW25LGEFhBgVix5BUIfVCUsV
+a4bYCsZARQxqBgCQG5joSIcUAVUhssJITMNMR1jnDBmKQmUNKEzsBUOdSsFYm21H
+eAtTnySFp2clbeJnXCY13r0dD4dyIqGxY3KDAwtFxuf/PbtNR8eFHn95laorP/dx
+V7Lv3rxZz9dF2+7qpUu2No4Z+Fy54O2lwWqOWypxVVGl3VlTUPCgIjpYVZp/tPnA
+2fy5hx+tndcyqynvFi+Ifx1a9W7F8tbahXkrs0VXr2gd/aXwff308ceb7x8i8f4I
+6gnDnycLmypyLnxqGgrbZI4TuvHj98YdA7nRqYlsS+Pq4fZl0/d8y1wr3Dnt9NuZ
+Z3bPuNl9cT37VjWlyNvX9WlzWVVv26RU2eTz7fRJ4bGGjjXx70+XLupa/KR8Q6Ja
+zu5dmpd8+eBgVuvqffFa+5A7oXn+s9bLQx03Ost7fu0/nvrc97w+XBiObIyfGo5f
+j/d/PbLudPnsh9tb/wBox0Mr
+=evOd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cparsons
+
+==================================================================
+
