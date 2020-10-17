@@ -1,0 +1,147 @@
+//
+// styles/_diploma.scss
+//
+
+@import '../../styles/reference/mixins';
+@import '../../styles/reference/variables';
+
+$border-size: 30px;
+$border-transparent: solid transparent;
+$border: $border-size solid rgba($greybrown, .8);
+$padding: 5px;
+$offset: -$padding;
+
+.diploma {
+	background: $greybrown-lighter;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 300px;
+	padding: 10px $padding $padding;
+	position: relative;
+	text-align: center;
+
+	@include media-min(sm) {
+		$padding-horizontal: 60px;
+
+		max-width: 400px;
+		padding-left: $padding-horizontal;
+		padding-right: $padding-horizontal;
+	}
+}
+
+// Use :before/:after for the corner edges
+.diploma::before,
+.diploma::after,
+.name::before,
+.name::after {
+	content: '';
+	position: absolute;
+	top: $offset;
+}
+
+.name::before,
+.name::after {
+	bottom: $offset;
+	top: auto;
+}
+
+.diploma::before {
+	border-right: $border-size $border-transparent;
+	border-top: $border;
+	left: $offset;
+}
+
+.diploma::after {
+	border-left: $border-size $border-transparent;
+	border-top: $border;
+	right: $offset;
+}
+
+.name::before {
+	border-bottom: $border;
+	border-right: $border-size $border-transparent;
+	left: $offset;
+}
+
+.name::after {
+	border-bottom: $border;
+	border-left: $border-size $border-transparent;
+	right: $offset;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.coatofarms {
+	margin-bottom: 10px;
+	width: 30px;
+}
+
+.school {
+	color: $black;
+	font-family: $font-family-serif;
+	font-size: $font-size-large;
+	letter-spacing: 8px;
+	line-height: $line-height-body;
+	margin-bottom: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.narrative {
+	font-family: $font-family-serif;
+	font-size: $font-size-smaller;
+	line-height: 2.25;
+	text-transform: uppercase;
+}
+
+.name {
+	font-family: $font-family-cursive;
+	font-size: $font-size-larger;
+	line-height: 1;
+	margin: 10px 0;
+}
+
+.degree,
+.date {
+	font-family: $font-family-cursive;
+	font-size: $font-size-medium;
+	margin: 10px 0;
+}
+
+.seal {
+	$size: 45px;
+	$rotation: 30deg;
+
+	@include image-replacement;
+
+	margin: 20px auto;
+	overflow: visible;
+	position: relative;
+	text-align: center;
+
+	&,
+	&::before,
+	&::after {
+		background: $red;
+		height: $size;
+		width: $size;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	&::before {
+		transform: rotate($rotation);
+	}
+
+	&::after {
+		transform: rotate($rotation * 2);
+	}
+}

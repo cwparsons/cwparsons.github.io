@@ -1,0 +1,72 @@
+//
+// styles/_main.scss
+//
+
+@import 'reference/mixins';
+@import 'reference/variables';
+
+html {
+	font-family: $font-family-sansserif;
+	font-size: 16px;
+	font-weight: $font-weight-light;
+	overflow-y: scroll;
+}
+
+body {
+	background: $blue-offwhite;
+	color: $grey-dark;
+	margin: 0;
+	padding: 1rem;
+	padding-top: 0;
+
+	@include media-min(sm) {
+		padding: 4rem;
+	}
+}
+
+a {
+	&,
+	&:visited {
+		color: transparent;
+	}
+}
+
+picture {
+	display: block;
+}
+
+img {
+	border: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 80rem;
+}
+
+.portrait {
+	background-color: $grey-dark;
+	border-radius: 50%;
+	display: block;
+	height: 10rem;
+	margin: 1rem auto;
+	overflow: hidden;
+	width: 10rem;
+}
+
+.narrative {
+	font-size: $font-size-large;
+	font-weight: $font-weight-light;
+	line-height: 27px;
+	margin: 3rem 0;
+	text-align: center;
+
+	@include media-min(sm) {
+		font-size: $font-size-narrative;
+		line-height: 38px;
+	}
+
+	b {
+		color: $grey-darker;
+	}
+}

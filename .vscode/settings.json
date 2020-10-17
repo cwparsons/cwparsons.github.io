@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		".cache": true,
+		".publish": true,
+		"node_modules": true,
+		"public": true,
+		"production": true,
+		"test": true
+	}
+}

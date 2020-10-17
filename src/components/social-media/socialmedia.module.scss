@@ -1,0 +1,73 @@
+@import '../../styles/reference/mixins';
+@import '../../styles/reference/variables';
+
+@font-face {
+	font-family: 'Fontello';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../fonts/Fontello.eot') format('embedded-opentype'),
+		url('../../fonts/Fontello.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Adobe Blank';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../fonts/AdobeBlank.eot') format('embedded-opentype'),
+	url('../../fonts/AdobeBlank.woff') format('woff');
+}
+
+// Duplicate Pinyon Script $font-face due to IE8 not liking the data-uri used
+// for the WOFF version.
+@font-face {
+	font-family: 'Pinyon Script';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../fonts/PinyonScript.eot');
+}
+
+@font-face {
+	font-family: 'Pinyon Script';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../fonts/PinyonScript.eot') format('embedded-opentype'),
+	url('../../fonts/PinyonScript.woff') format('woff');
+}
+
+.list {
+	@include clean-list;
+
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+	margin-left: 40px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.icon {
+	display: block;
+	font-family: $font-family-blank;
+	font-size: $font-size-narrative;
+	text-decoration: none;
+	transition: color .3s ease-in-out, transform .3s ease-in-out;
+
+	&,
+	&:visited {
+		color: $grey-dark;
+	}
+
+	&:hover,
+	&:focus {
+		color: $blue;
+		transform: scale(1.05);
+	}
+
+	&::first-letter {
+		font-family: $font-family-icon;
+	}
+}

@@ -1,0 +1,201 @@
+//
+// styles/_card.scss
+//
+
+@import '../../styles/reference/mixins';
+@import '../../styles/reference/variables';
+
+.card {
+	$box-shadow: 2px;
+
+	box-shadow: $box-shadow $box-shadow $box-shadow rgba($grey-darker, .1);
+	display: inline-block;
+	font-size: $font-size-small;
+	left: 50%;
+	max-width: 100%;
+	position: absolute;
+	text-align: left;
+	width: 280px;
+	z-index: 1;
+
+	@include media-min(sm) {
+		font-size: $font-size-medium;
+		width: 500px;
+	}
+}
+
+.wrapper {
+	height: 285px;
+	margin-bottom: 40px;
+	position: relative;
+	text-align: center;
+
+	@include media-min(sm) {
+		height: 460px;
+	}
+
+	.lt-ie9 & {
+		height: 155px;
+	}
+}
+
+.back {
+	margin-left: -155px;
+	z-index: 20;
+
+	@include media-min(sm) {
+		margin-left: -300px;
+	}
+
+	@include media-min(md) {
+		margin-left: -400px;
+	}
+
+	&,
+	.container {
+		background-color: $white;
+	}
+}
+
+.front {
+	color: $white;
+	margin-left: -125px;
+	top: 130px;
+	z-index: 10;
+
+	@include media-min(sm) {
+		margin-left: -200px;
+		top: 205px;
+	}
+
+	@include media-min(md) {
+		margin-left: -100px;
+	}
+
+	&,
+	.container {
+		background-color: $red;
+	}
+}
+
+.container {
+	box-sizing: border-box;
+	height: 155px;
+	padding: 15px;
+	position: relative;
+	z-index: 20;
+
+	@include media-min(sm) {
+		height: 255px;
+		padding: 35px;
+	}
+}
+
+a,
+a b {
+	text-decoration: none;
+}
+
+.link {
+	&,
+	&:visited {
+		color: $grey-dark;
+	}
+
+	&:hover {
+		color: $red;
+	}
+}
+
+.name {
+	font-size: $font-size-medium;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+
+	@include media-min(sm) {
+		font-size: $font-size-medium + .125rem;
+		margin-top: 25px;
+	}
+
+	&,
+	&:visited {
+		color: $red;
+	}
+
+	b {
+		color: $grey-dark;
+	}
+}
+
+.contact {
+	bottom: 15px;
+	left: auto;
+	position: absolute;
+	right: 30px;
+	width: 185px;
+
+	@include media-min(sm) {
+		bottom: 30px;
+		width: 250px;
+	}
+}
+
+.phone {
+	display: block;
+
+	&-type {
+		font-size: 9px;
+		text-transform: uppercase;
+	}
+}
+
+.email {
+	display: block;
+	margin-top: 5px;
+
+	@include media-min(sm) {
+		margin-top: 15px;
+	}
+}
+
+.organization {
+	@include image-replacement;
+
+	background-image: url('../../images/cards/habanero.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 30px;
+	margin: 40px auto 0;
+	width: 132px;
+
+	@include media-min(sm) {
+		$height: 42px;
+		$width: 236px;
+
+		height: $height;
+		left: 50%;
+		margin-left: -($width / 2);
+		margin-top: -($height / 2) - 5px;
+		position: absolute;
+		top: 50%;
+		width: $width;
+	}
+}
+
+.address {
+	bottom: 10px;
+	font-size: $font-size-smaller;
+	font-style: normal;
+	left: 0;
+	margin-top: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+
+	@include media-min(sm) {
+		bottom: 20px;
+		font-size: $font-size-small;
+	}
+}

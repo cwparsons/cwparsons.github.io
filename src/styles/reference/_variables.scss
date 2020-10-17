@@ -1,0 +1,62 @@
+//
+// reference/_variables.scss
+//
+
+
+// Color
+
+$black:                #000;
+
+$white:                #fff;
+$white-dark:           #f2f2f2;
+$white-darker:         #eee;
+
+$grey:                 #999;
+$grey-lighter:           lighten($grey, 25%);
+$grey-light:             lighten($grey, 10%);
+$grey-dark:            #666;
+$grey-darker:          #333;
+
+$blue-offwhite:        hsl(200, 50%, 98%);
+$blue:                 hsl(200, 50%, 50%);
+$blue-dark:            hsl(200, 50%, 20%);
+
+$red:                  #a71930;
+
+$greybrown-lighter:    #f2ede6;
+$greybrown:            #999691;
+
+
+// Font Family
+$font-family-fallback:   Helvetica, Arial, sans-serif;
+$font-family-sansserif:  'Helvetica Neue', 'Roboto', 'Open Sans', $font-family-fallback;
+$font-family-serif:      'Times New Roman', serif;
+
+$font-family-cursive:    'Pinyon Script', cursive;
+$font-family-icon:       'Fontello', $font-family-sansserif;
+$font-family-blank:      'Adobe Blank', $font-family-sansserif;
+
+// Font Size
+$font-size-smaller:      .5rem;
+$font-size-small:        .75rem;
+$font-size-medium:       .875rem;
+$font-size-large:        1.25rem;
+$font-size-larger:       1.5rem;
+
+$font-size-narrative:    1.75rem;
+
+// Font Weights
+$font-weight-light:      300;
+$font-weight-normal:     400;
+$font-weight-semibold:   500;
+
+// Line Heights
+$line-height-body:       1.4;
+
+
+// Media queries breakpoints
+$breakpoints: (
+	sm: 42em,
+	md: 64em,
+	lg: 86em
+);

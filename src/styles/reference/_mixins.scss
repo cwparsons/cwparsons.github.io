@@ -1,0 +1,56 @@
+﻿//
+// reference/_mixins.scss
+//
+
+@import 'variables';
+
+
+//
+// clean-list Removes bullets and white-space from lists
+//
+@mixin clean-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+//
+// clear-fix Forces elements to contain float child elements
+//
+@mixin clear-fix {
+	zoom: 1;
+
+	&::before,
+	&::after {
+		content: ' ';
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
+}
+
+
+//
+// image-replacement
+//
+@mixin image-replacement {
+	border: 0;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+
+//
+// media-min
+//
+@mixin media-min($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+}

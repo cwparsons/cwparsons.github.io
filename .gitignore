@@ -1,0 +1,18 @@
+# Generated files
+public
+production
+.cache
+.publish
+.DS_Store
+
+# Project files
+*.sublime-workspace
+
+# NPM
+node_modules
+
+# Design export assets
+design/*-assets
+
+# Mac OSX files
+.DS_Store

@@ -1,0 +1,76 @@
+{
+	"items": [
+		{
+			"name": "Open source image resizer",
+			"url": "https://github.com/habaneroconsulting/image-resizer",
+			"img": "imageresizer.png",
+			"desc": "Front-end architect.<br> Built with React."
+		},
+		{
+			"name": "GO Intranet Accelerator",
+			"url": "https://www.habaneroconsulting.com/stories/insights/2020/recorded-webinar-its-time-to-modernize-your-intranet?theme=go",
+			"img": "gointranetaccelerator.png",
+			"desc": "Front-end architect.<br> Built with <abbr title=\"SharePoint Framework\">SPFx</abbr> for modern SharePoint."
+		},
+		{
+			"name": "Toronto Pearosn",
+			"url": "https://www.torontopearson.com",
+			"img": "torontopearson.png",
+			"desc": "Front-end architect.<br> Built with Sitecore."
+		},
+		{
+			"name": "Petro-Canada.ca",
+			"url": "https://www.petro-canada.ca",
+			"img": "petrocanadaca.png",
+			"desc": "Front-end architect.<br> Built with Sitecore."
+		},
+		{
+			"name": "Connect with GO",
+			"url": "https://www.connectwithgo.com",
+			"img": "connectwithgo.png",
+			"desc": "Front-end architect.<br> Built with Sitecore."
+		},
+		{
+			"name": "YVR.ca",
+			"url": "http://www.yvr.ca",
+			"img": "yvrca.png",
+			"desc": "ACI-NA's 2016 Best Airport Website.<br> Lead front-end developer. Built with Sitecore."
+		},
+		{
+			"name": "Goldcorp's Conveyor",
+			"url": "https://www.habaneroconsulting.com/stories/success-stories/improving-alignment-and-productivity--with-a-new-digital-workplace-at-goldcorp",
+			"img": "conveyorgoldcorpcom.png",
+			"desc": "Nielsen Norman Group's 10 Best Intranets of 2017.<br> Lead front-end developer. Built with SharePoint."
+		},
+		{
+			"name": "HabaneroConsulting.com",
+			"url": "https://www.habaneroconsulting.com",
+			"img": "habaneroconsultingcom.png",
+			"desc": "Lead developer.<br> Built with Sitecore."
+		},
+		{
+			"name": "CAPP's Context Magazine",
+			"url": "http://context.capp.ca",
+			"img": "contextcappca.png",
+			"desc": "Best Association Website at <abbr title=\"Canadian Online Publishing Awards\">COPA</abbr> 2017.<br> Lead front-end developer. Built with Sitecore."
+		},
+		{
+			"name": "FreeholdBrewing.ca",
+			"url": "https://www.freeholdbrewing.ca",
+			"img": "freeholdbrewingca.png",
+			"desc": "Lead developer.<br> Built with Craft CMS."
+		},
+		{
+			"name": "ENMAX.ca",
+			"url": "https://www.habaneroconsulting.com/stories/success-stories/enmax-is-powering-a-better-customer-experience-with-sharepoint-2013",
+			"img": "enmax.png",
+			"desc": "Front-end developer.<br> Built with SharePoint."
+		},
+		{
+			"name": "ICBC’s Practice Knowledge Test",
+			"url": "http://practicetest.icbc.com",
+			"img": "practicetesticbccom.png",
+			"desc": "Lead developer.<br> Built with AngularJS."
+		}
+	]
+}

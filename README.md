@@ -1,5 +1,8 @@
-# cwparsons.github.io
+# Portfolio
 
-A user pages repository for [cwparsons.ca](http://cwparsons.ca).
+[![devDependency Status](https://david-dm.org/cwparsons/cwparsons.ca/dev-status.svg)](https://david-dm.org/cwparsons/cwparsons.ca#info=devDependencies) [![Build status](https://travis-ci.org/cwparsons/cwparsons.ca.svg)](http://travis-ci.org/cwparsons/cwparsons.ca)
 
-See [cwparsons/cwparsons.ca](https://github.com/cwparsons/cwparsons.ca) for the source code repository.
+## Development
+
+- Use `npm start` to start the Gatsby develoment server.
+- Use `npm run deploy` to deploy the built Gatsby site to the user pages repository.
