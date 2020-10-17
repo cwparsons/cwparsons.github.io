@@ -1,6 +1,6 @@
 # Portfolio
 
-[![devDependency Status](https://david-dm.org/cwparsons/cwparsons.ca/dev-status.svg)](https://david-dm.org/cwparsons/cwparsons.ca#info=devDependencies) [![Build status](https://travis-ci.org/cwparsons/cwparsons.ca.svg)](http://travis-ci.org/cwparsons/cwparsons.ca)
+[![devDependency Status](https://david-dm.org/cwparsons/cwparsons.github.io/dev-status.svg)](https://david-dm.org/cwparsons/cwparsons.github.io#info=devDependencies) ![Deployment](https://github.com/cwparsons/cwparsons.github.io/workflows/Deployment/badge.svg)
 
 ## Development
 
