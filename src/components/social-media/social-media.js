@@ -5,7 +5,7 @@ import styles from './socialmedia.module.scss';
 
 export const SocialMedia = () => (
 	<>
-		<p className={globalStyles.narrative}>I can be found around the web:</p>
+		<h2 className={globalStyles.narrative}>I can be found around the web:</h2>
 
 		<ul className={styles.list}>
 			<li className={styles.item}>

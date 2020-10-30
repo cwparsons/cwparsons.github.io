@@ -44,13 +44,13 @@
 	$box-shadow: 1px;
 
 	background-color: $white;
-	box-shadow: $box-shadow $box-shadow $box-shadow rgba($grey-darker, .1);
+	box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
 	box-sizing: border-box;
 	display: inline-block;
 	max-width: 100%;
 	padding: 1rem;
 	text-decoration: none;
-	transition: transform .3s ease-in-out;
+	transition: box-shadow 100ms ease-in-out, background-color 100ms ease-in-out;
 	width: 100%;
 
 	&,
@@ -60,8 +60,13 @@
 
 	&:focus,
 	&:hover {
+		background-color: $white-dark;
+		box-shadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
 		color: $blue;
-		transform: scale(1.025);
+	}
+
+	&:active {
+		background-color: $white-darker;
 	}
 }
 
@@ -93,11 +98,13 @@
 }
 
 .title {
+	color: $grey-darker;
 	display: block;
+	font-weight: 400;
 }
 
 .desc {
-	color: $grey;
+	color: $grey-dark;
 	display: block;
 	margin-top: 5px;
 }

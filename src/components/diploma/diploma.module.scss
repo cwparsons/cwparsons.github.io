@@ -116,6 +116,7 @@ $offset: -$padding;
 
 	@include image-replacement;
 
+	color: $white;
 	margin: 20px auto;
 	overflow: visible;
 	position: relative;

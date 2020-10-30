@@ -26,9 +26,9 @@ const PortfolioItem = item => (
 
 export const Portfolio = () => (
 	<>
-		<p className={globalStyles.narrative}>
+		<h2 className={globalStyles.narrative}>
 			I’ve worked on some fun projects:
-		</p>
+		</h2>
 
 		<div className={styles.portfolio}>
 			<ul className={styles.list}>
