@@ -1,19 +1,13 @@
 {
 	"items": [
 		{
-			"name": "Open source image resizer",
-			"url": "https://github.com/habaneroconsulting/image-resizer",
-			"img": "imageresizer.png",
-			"desc": "Front-end architect.<br> Built with React."
-		},
-		{
 			"name": "GO Intranet Accelerator",
 			"url": "https://www.habaneroconsulting.com/stories/insights/2020/recorded-webinar-its-time-to-modernize-your-intranet?theme=go",
 			"img": "gointranetaccelerator.png",
 			"desc": "Front-end architect.<br> Built with <abbr title=\"SharePoint Framework\">SPFx</abbr> for modern SharePoint."
 		},
 		{
-			"name": "Toronto Pearosn",
+			"name": "Toronto Pearson",
 			"url": "https://www.torontopearson.com",
 			"img": "torontopearson.png",
 			"desc": "Front-end architect.<br> Built with Sitecore."
@@ -23,6 +17,12 @@
 			"url": "https://www.petro-canada.ca",
 			"img": "petrocanadaca.png",
 			"desc": "Front-end architect.<br> Built with Sitecore."
+		},
+		{
+			"name": "Open source image resizer",
+			"url": "https://github.com/habaneroconsulting/image-resizer",
+			"img": "imageresizer.png",
+			"desc": "Front-end architect.<br> Built with React."
 		},
 		{
 			"name": "Connect with GO",
