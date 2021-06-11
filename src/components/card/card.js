@@ -30,10 +30,10 @@ export const Card = () => (
 				<div className={styles.contact}>
 					<a
 						className={classnames(styles.link, styles.phone)}
-						href="tel:14162605959,196"
+						href="tel:6479056845"
 						itemProp="telephone"
 					>
-						416.260.5959 x196
+						647.905.6845
 					</a>
 					<a
 						className={classnames(styles.link, styles.phone)}
