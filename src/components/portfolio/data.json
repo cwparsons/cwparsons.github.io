@@ -4,13 +4,13 @@
 			"name": "GO Intranet Accelerator",
 			"url": "https://www.habaneroconsulting.com/stories/insights/2020/recorded-webinar-its-time-to-modernize-your-intranet?theme=go",
 			"img": "gointranetaccelerator.png",
-			"desc": "Front-end architect.<br> Built with <abbr title=\"SharePoint Framework\">SPFx</abbr> for modern SharePoint."
+			"desc": "Front-end architect.<br> Built with <abbr title=\"SharePoint Framework\">SPFx</abbr> and React."
 		},
 		{
 			"name": "Toronto Pearson",
 			"url": "https://www.torontopearson.com",
 			"img": "torontopearson.png",
-			"desc": "Front-end architect.<br> Built with Sitecore."
+			"desc": "Front-end architect.<br> Built with Sitecore and React."
 		},
 		{
 			"name": "Petro-Canada.ca",
