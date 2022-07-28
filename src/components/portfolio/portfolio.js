@@ -4,8 +4,8 @@ import { Image } from './image';
 
 import data from './data.json';
 
-import globalStyles from '../../styles/main.module.scss';
-import styles from './portfolio.module.scss';
+import * as globalStyles from '../../styles/main.module.scss';
+import * as styles from './portfolio.module.scss';
 
 const PortfolioItem = item => (
 	<li className={styles.item} key={`${item.img}-key`}>

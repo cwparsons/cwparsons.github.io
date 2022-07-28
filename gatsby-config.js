@@ -22,6 +22,7 @@ module.exports = {
 				plugins: [`gatsby-remark-smartypants`]
 			}
 		},
+		`gatsby-plugin-image`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-sass`,
 		`gatsby-plugin-sharp`,
@@ -30,7 +31,7 @@ module.exports = {
 	siteMetadata: {
 		author: '@cwlparsons',
 		title: `Christopher Parsons, Front-End Developer`,
-		siteUrl: `https://www.cwparsons.ca`,
+		siteUrl: `https://cwparsons.ca`,
 		description: `A portfolio site for Christopher Parsons, front-end developer.`
 	}
 };

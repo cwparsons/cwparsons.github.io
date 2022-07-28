@@ -6,12 +6,12 @@ import { Diploma } from '../components/diploma/diploma';
 import { Portfolio } from '../components/portfolio/portfolio';
 import { SocialMedia } from '../components/social-media/social-media';
 
-import styles from '../styles/main.module.scss';
-import SEO from '../components/seo/seo';
+import * as styles from '../styles/main.module.scss';
+import Seo from '../components/seo/seo';
 
-export default ({ data }) => (
+const Index = ({ data }) => (
 	<>
-		<SEO />
+		<Seo />
 		<main className={styles.container} role="main">
 			<div className="h-card">
 				<Introduction />
@@ -31,3 +31,5 @@ export default ({ data }) => (
 		</main>
 	</>
 );
+
+export default Index;

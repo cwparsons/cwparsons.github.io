@@ -1,5 +1,5 @@
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react';
 
 export const Image = ({ alt, imgName }) => (
@@ -9,8 +9,8 @@ export const Image = ({ alt, imgName }) => (
 				allImageSharp {
 					edges {
 						node {
-							fluid(maxWidth: 363) {
-								...GatsbyImageSharpFluid_withWebp
+							gatsbyImageData(width: 363, layout: CONSTRAINED, formats: [AUTO, WEBP, AVIF])
+							resize {
 								originalName
 							}
 						}
@@ -20,14 +20,14 @@ export const Image = ({ alt, imgName }) => (
 		`}
 		render={data => {
 			const image = data.allImageSharp.edges.find(
-				edge => edge.node.fluid.originalName === imgName
+				edge => edge.node.resize.originalName === imgName
 			);
 
 			if (!image) {
 				return null;
 			}
 
-			return <Img alt={alt} fluid={image.node.fluid} />;
+			return <GatsbyImage alt={alt} image={image.node.gatsbyImageData} />;
 		}}
 	/>
 );

@@ -1,7 +1,10 @@
+//@ts-check
+
 import React from 'react';
 import classnames from 'classnames';
 
-import styles from './card.module.scss';
+// @ts-ignore
+import * as styles from './card.module.scss';
 
 export const Card = () => (
 	<div className={styles.wrapper}>
@@ -14,8 +17,8 @@ export const Card = () => (
 				<a
 					className={classnames(
 						styles.name,
-						styles['p-name'],
-						styles['u-url']
+						'p-name',
+						'u-url'
 					)}
 					href="https://www.habaneroconsulting.com/team/christopher-parsons"
 					itemProp="name"
@@ -23,7 +26,7 @@ export const Card = () => (
 					Christopher <b>Parsons</b>
 				</a>
 
-				<div className={styles.title} itemProp="jobTitle">
+				<div className="title" itemProp="jobTitle">
 					Front-End Architect
 				</div>
 
@@ -51,7 +54,7 @@ export const Card = () => (
 						cparsons@habaneroconsulting.com
 					</a>
 					<a
-						className={classnames(styles.link, styles.url)}
+						className={classnames(styles.link, 'url')}
 						href="https://www.habaneroconsulting.com"
 						itemProp="url"
 					>

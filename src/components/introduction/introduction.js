@@ -1,34 +1,32 @@
+//@ts-check
+
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from 'react';
 
-import styles from '../../styles/main.module.scss';
+// @ts-ignore
+import * as globalStyles from '../../styles/main.module.scss';
 
 export const Introduction = () => {
 	const { image } = useStaticQuery(
-		graphql`
-			query {
-				image: file(relativePath: { eq: "portrait/portrait.jpg" }) {
-					childImageSharp {
-						fixed(width: 160, height: 160) {
-							...GatsbyImageSharpFixed_withWebp
-						}
-					}
-				}
-			}
-		`
+		graphql`{
+        image: file(relativePath: {eq: "portrait/portrait.jpg"}) {
+          childImageSharp {
+            gatsbyImageData(width: 160, height: 160, layout: CONSTRAINED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    `
 	);
 
-	return (
-		<>
-			<picture className={styles.portrait}>
-				<Img fixed={image.childImageSharp.fixed} />
-			</picture>
+	return <>
+        <picture className={globalStyles.portrait}>
+            <GatsbyImage alt="A profile photo of Christopher Parsons." image={image.childImageSharp.gatsbyImageData} />
+        </picture>
 
-			<h1 className={styles.narrative}>
-				Hi. I’m <b>Christopher Parsons</b>,<br />a front-end developer
-				living in Toronto, Canada.
-			</h1>
-		</>
-	);
+        <h1 className={globalStyles.narrative}>
+            Hi. I’m <b>Christopher Parsons</b>,<br />a front-end developer
+            living in Toronto, Canada.
+        </h1>
+    </>;
 };

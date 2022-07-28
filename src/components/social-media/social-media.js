@@ -1,7 +1,11 @@
+//@ts-check
+
 import React from 'react';
 
-import globalStyles from '../../styles/main.module.scss';
-import styles from './socialmedia.module.scss';
+// @ts-ignore
+import * as globalStyles from '../../styles/main.module.scss';
+// @ts-ignore
+import * as styles from './socialmedia.module.scss';
 
 export const SocialMedia = () => (
 	<>
