@@ -26,7 +26,7 @@ export const Introduction = () => {
 
         <h1 className={globalStyles.narrative}>
             Hi. I’m <b>Christopher Parsons</b>,<br />a front-end developer
-            living in Toronto, Canada.
+            living in Vancouver, Canada.
         </h1>
     </>;
 };

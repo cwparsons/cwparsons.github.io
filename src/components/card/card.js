@@ -76,14 +76,14 @@ export const Card = () => (
 				</a>
 				<address className={styles.address} itemProp="address">
 					<span itemProp="streetAddress">
-						705 - 119 Spadina Avenue
+						510 - 1111 Melville Street
 					</span>
 					,&nbsp;
-					<span itemProp="addressLocality">Toronto</span>
+					<span itemProp="addressLocality">Vancouver</span>
 					,&nbsp;
-					<span itemProp="addressRegion">Ontario</span>
+					<span itemProp="addressRegion">BC</span>
 					&nbsp;
-					<span itemProp="postalCode">M5V 2L1</span>
+					<span itemProp="postalCode">V6E 3V6</span>
 				</address>
 			</div>
 		</div>
